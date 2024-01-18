@@ -124,7 +124,7 @@ class Laberinto():
 
         #Inicializamos la Frontera a la posicion de inicio
         start = Node(state=self.start, parent=None, action=None)
-        frontier = QueueFrintier()
+        frontier = StackFrontier()
         frontier.add(start)
 
         self.typeSearch = "Queue - Cola" if isinstance(frontier, QueueFrintier) else "Stack - Pila"
